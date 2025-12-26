@@ -10,9 +10,12 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.36.0",
     "next": "16.1.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-icons": "^5.5.0",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
