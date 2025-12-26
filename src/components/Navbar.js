@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <nav className="sticky flex items-center justify-end">
+        <nav className="sticky top-0 right-0 flex h-screen items-center justify-end">
             Nav
         </nav>
     )
