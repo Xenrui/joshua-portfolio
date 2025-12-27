@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import { FaChevronRight } from "react-icons/fa";
 
 const Home = () => {
 	return (
@@ -10,6 +11,15 @@ const Home = () => {
 					</div>
 				</section>
 
+				<section aria-label="projects" className="min-h-screen">
+					<div className="flex justify-between items-end">
+						<h2 className="text-4xl">Featured Projects</h2>
+						<div className="flex items-center gap-2">
+							<span>View all Project</span>
+							<FaChevronRight />
+						</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	);
