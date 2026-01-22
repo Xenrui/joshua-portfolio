@@ -40,7 +40,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="sticky top-0 right-0 flex h-screen items-center justify-end pr-8">
+		<nav className="sticky top-0 right-0 md:flex h-screen items-center justify-end pr-8 hidden">
 			<div className="relative">
 				{/* Vertical line */}
 				<div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-700 -translate-x-1/2" />

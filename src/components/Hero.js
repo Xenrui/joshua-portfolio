@@ -8,11 +8,13 @@ const Hero = () => {
 	return (
 		<div className="relative">
 			<div className="flex gap-4 items-baseline mb-5">
-				<h1 className="text-7xl text-foreground font-bold">Joshua Delos Reyes</h1>
-				<span className="text-secondary-accent/50 text-3xl font-semibold">/xenrui</span>
+				<h1 className="text-5xl sm:text-6xl lg:text-7xl text-foreground font-bold">
+					Joshua Delos Reyes
+					<span className="text-secondary-accent/50 text-2xl md:text-3xl font-semibold ml-4">/xenrui</span>
+				</h1>
 			</div>
 
-			<div className="text-5xl mb-8 flex gap-3 font-semibold text-secondary-fg items-center">
+			<div className="text-3xl sm:text-4xl md:text-5xl mb-8 flex gap-3 font-semibold text-secondary-fg items-center">
 				<span>&mdash;</span>
 				<Typewriter
 					options={{
@@ -27,9 +29,9 @@ const Hero = () => {
 			</div>
 
 			<div className="mb-20">
-				<p className="text-xl font-light font-roboto indent-8 text-white/60">
-					A 3rd Year IT Student at Polytechnic University of the Philippines. Passionate about learning tech and
-					building cool stuff
+				<p className="text-xl font-light font-roboto text-white/60 ">
+					A 3rd Year IT Student at Polytechnic University of the Philippines. Passionate about learning tech
+					and building cool stuff
 				</p>
 			</div>
 			<div className="">

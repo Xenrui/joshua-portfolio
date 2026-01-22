@@ -43,7 +43,7 @@ const Home = ({ projects }) => {
 							<FaChevronRight />
 						</div>
 					</div>
-					<div className="grid gap-6 lg:grid-cols-3">
+					<div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 						{projects.map((project) => (
 							<ProjectCard key={project.slug} project={project} />
 						))}
@@ -75,13 +75,13 @@ const Home = ({ projects }) => {
 					<section className="py-32 flex items-center justify-center">
 						<div className="max-w-3xl">
 							<div className="relative">
-								<div className="absolute -top-8 -left-6 text-6xl text-white/50 font-bold">"</div>
-								<h3 className="text-5xl md:text-6xl text-center text-white/50 font-serif leading-relaxed px-8">
+								<div className="absolute -top-6 -left-3 text-4xl text-white/50 font-bold">"</div>
+								<h3 className="text-2xl md:text-4xl text-center text-white/50 font-serif leading-relaxed px-8">
 									{quote?.text}
 								</h3>
-								<div className="absolute -bottom-8 -right-6 text-6xl text-white/50 font-bold">"</div>
+								<div className="absolute -bottom-6 -right-3 text-4xl text-white/50 font-bold">"</div>
 							</div>
-							<p className="text-center text-white/60 text-lg mt-16 italic font-light">
+							<p className="text-center text-white/60 text-xl mt-16 italic font-light">
 								— {quote?.author}
 							</p>
 						</div>

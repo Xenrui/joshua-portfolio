@@ -9,8 +9,8 @@ const oswald = Oswald({
 });
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+	variable: "--font-inter",
+	subsets: ["latin"],
 });
 
 const roboto = Roboto({
@@ -27,9 +27,11 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={`${oswald.variable} ${roboto.variable} ${inter.variable} antialiased`}>
-				<div className="grid max-w-5xl grid-cols-5 mx-auto bg-background ">
-					{children}
-					<Navbar />
+				<div className="mx-auto max-w-6xl bg-background flex flex-col md:flex-row gap-6 px-6">
+					<div className="flex-1">{children}</div>
+					<div className="w-full md:w-64">
+						<Navbar />
+					</div>
 				</div>
 				<Footer />
 			</body>

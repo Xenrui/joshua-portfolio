@@ -3,9 +3,9 @@ import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
 	return (
 		<footer className="bg-black/40 w-full">
-			<div className="max-w-5xl py-15 mx-auto">
+			<div className="max-w-6xl py-15 px-8 mx-auto">
 				<div className="grid grid-cols-2">
-					<div className="text-3xl">Joshua Delos Reyes</div>
+					<div className="text-3xl"></div>
                     <div className="flex flex-col items-end gap-2">
                         <h5 className='font-inter font-bold'>Navigation</h5>
 					<div className="flex justify-end items-center gap-5 text-xs text-white/50">
