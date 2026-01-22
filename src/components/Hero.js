@@ -28,8 +28,8 @@ const Hero = () => {
 
 			<div className="mb-20">
 				<p className="text-xl font-light font-roboto indent-8 text-white/60">
-					A 3rd Year IT Student at Polytechnic University of the Philippines. Passionate on learning tech and
-					building cool stuffs
+					A 3rd Year IT Student at Polytechnic University of the Philippines. Passionate about learning tech and
+					building cool stuff
 				</p>
 			</div>
 			<div className="">
@@ -40,17 +40,15 @@ const Hero = () => {
 						target="_blank">
 						<FaFacebook className="text-secondary w-9 h-9" />
 					</a>
-					<a
-						className="transition-all hover:scale-105"
-						href="https://www.linkedin.com/in/joshualdelosreyes/"
-						target="_blank">
-						<FaLinkedin className="text-secondary w-9 h-9" />
-					</a>
 					<a className="transition-all hover:scale-105" href="https://github.com/Xenrui" target="_blank">
 						<FaGithub className="text-secondary w-9 h-9" />
 					</a>
-					<a className="transition-all hover:scale-105" href="mailto:joshua123.jdr@gmail.com" target="_blank">
-						<FaEnvelope className="text-secondary w-9 h-9" />
+					<a
+						className="px-4 py-2 font-inter font-bold bg-secondary rounded-full hover:bg-secondary/80 transition-all hover:scale-105 bg-white text-black"
+						href="/assets/Joshua-DelosReyes-CV.pdf"
+						target="_blank"
+						rel="noopener noreferrer">
+						Download CV
 					</a>
 				</div>
 			</div>
