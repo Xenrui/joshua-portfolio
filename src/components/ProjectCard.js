@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
 				</div>
 				<div className="p-4 flex flex-col justify-between gap-5 flex-1">
 					<div className="">
-						<h3 className="text-3xl mb-2">{project.title}</h3>
+						<h3 className="text-2xl mb-2">{project.title}</h3>
 						<p className="text-xs text-white/50">{project.description}</p>
 					</div>
 					<div className="flex flex-wrap gap-2 text-sm items-center">
@@ -24,11 +24,13 @@ const ProjectCard = ({ project }) => {
 							const techData = techstack[tech];
 							if (!techData) return null;
 							return (
-								<div key={tech} className="bg-white/20 px-3 py-1 rounded-full flex gap-1 items-center">
+								<div
+									key={tech}
+									className="bg-white/10 border border-white/20 px-3 py-1 rounded-full flex gap-1 items-center">
 									<div className="h-5 w-5">
 										<StackIcon name={techData.icon} />
 									</div>
-									<span className="font-medium text-xs">{techData.label}</span>
+									<span className="font-medium text-xs text-white/80">{techData.label}</span>
 								</div>
 							);
 						})}
