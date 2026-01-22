@@ -1,16 +1,7 @@
 import { Geist, Geist_Mono, Oswald, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-
-const geistSans = Geist({
-	variable: "--font-geist-sans",
-	subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-	variable: "--font-geist-mono",
-	subsets: ["latin"],
-});
+import Footer from "@/components/Footer";
 
 const oswald = Oswald({
 	variable: "--font-oswald",
@@ -30,10 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body
-				className={`${oswald.variable} ${roboto.variable} grid max-w-5xl grid-cols-5 mx-auto bg-background antialiased`}>
-				{children}
-				<Navbar />
+			<body className={`${oswald.variable} ${roboto.variable} antialiased`}>
+				<div className="grid max-w-5xl grid-cols-5 mx-auto bg-background ">
+					{children}
+					<Navbar />
+				</div>
+				<Footer />
 			</body>
 		</html>
 	);
