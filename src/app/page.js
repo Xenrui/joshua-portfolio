@@ -35,7 +35,7 @@ const Home = () => {
 								<div
 									className="px-8 py-3 bg-white/10 rounded-xl flex flex-col items-center justify-center gap-1"
 									key={techstack.label}>
-									<h5 className="text-md text-nowrap">{techstack.label}</h5>
+									<h5 className="text-sm font-bold text-white/70 text-nowrap font-inter">{techstack.label}</h5>
 									<div className="h-12 w-12">
 										<StackIcon name={techstack.icon} />
 									</div>
@@ -45,7 +45,7 @@ const Home = () => {
 					</div>
 				</section>
 
-				
+
 			</main>
 		</div>
 	);

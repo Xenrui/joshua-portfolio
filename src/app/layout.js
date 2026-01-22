@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Oswald, Roboto } from "next/font/google";
+import { Geist, Geist_Mono, Oswald, Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,6 +6,11 @@ import Footer from "@/components/Footer";
 const oswald = Oswald({
 	variable: "--font-oswald",
 	subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 const roboto = Roboto({
@@ -21,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={`${oswald.variable} ${roboto.variable} antialiased`}>
+			<body className={`${oswald.variable} ${roboto.variable} ${inter.variable} antialiased`}>
 				<div className="grid max-w-5xl grid-cols-5 mx-auto bg-background ">
 					{children}
 					<Navbar />
