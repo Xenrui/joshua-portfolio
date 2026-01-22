@@ -27,7 +27,7 @@ const Hero = () => {
 			</div>
 
 			<div className="mb-20">
-				<p className="text-xl font-light font-roboto indent-8">
+				<p className="text-xl font-light font-roboto indent-8 text-white/60">
 					A 3rd Year IT Student at Polytechnic University of the Philippines. Passionate on learning tech and
 					building cool stuffs
 				</p>
