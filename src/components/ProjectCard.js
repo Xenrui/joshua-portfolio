@@ -4,10 +4,11 @@ import { motion } from "motion/react";
 import { techstack } from "@/lib/techstack";
 import StackIcon from "tech-stack-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectCard = ({ project }) => {
 	return (
-		<div className="h-full">
+		<a className="h-full" href={project.links.github}>
 			<motion.div
 				className="group bg-white/5 rounded-xl border border-white/10 hover:border-white/25 h-full flex flex-col"
 				whileHover={{ y: -3 }}>
@@ -16,7 +17,7 @@ const ProjectCard = ({ project }) => {
 				</div>
 				<div className="p-4 flex flex-col justify-between gap-5 flex-1">
 					<div className="">
-						<h3 className="text-2xl mb-2">{project.title}</h3>
+						<h3 className="text-2xl mb-2 font-inter font-bold">{project.title}</h3>
 						<p className="text-xs text-white/50">{project.description}</p>
 					</div>
 					<div className="flex flex-wrap gap-2 text-sm items-center">
@@ -37,7 +38,7 @@ const ProjectCard = ({ project }) => {
 					</div>
 				</div>
 			</motion.div>
-		</div>
+		</a>
 	);
 };
 
