@@ -6,13 +6,14 @@ const Home = () => {
 	return (
 		<div className="relative col-span-4 items-center min-h-screen">
 			<main className="text-foreground">
-				<section aria-label="Hero" className="relative flex  min-h-screen w-full items-center">
+				<section id="hero" aria-label="Hero" className="relative flex min-h-screen w-full items-center">
 					<div className="relative">
 						<Hero />
 					</div>
 				</section>
 
-				<section aria-label="projects" className="min-h-screen">
+
+				<section id="projects" aria-label="projects" className="my-5">
 					<div className="flex justify-between items-end mb-8">
 						<h2 className="text-4xl">Featured Projects</h2>
 						<div className="flex items-center gap-2">
@@ -24,6 +25,8 @@ const Home = () => {
 						<ProjectCard />
 					</div>
 				</section>
+
+
 			</main>
 		</div>
 	);
