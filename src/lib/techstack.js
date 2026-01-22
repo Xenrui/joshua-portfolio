@@ -1,11 +1,42 @@
-export const techstack = [
-	{ label: "React", icon: "react"},
-	{ label: "Next.js", icon: "nextjs2"},
-	{ label: "Laravel", icon: "laravel"},
-	{ label: "Java", icon: "java"},
-	{ label: "MySQL", icon: "mysql"},
-	{ label: "Supabase", icon: "supabase"},
-	{ label: "Tailwind CSS", icon: "tailwindcss"},
-	{ label: "Vercel", icon: "vercel"},
-	{ label: "Git", icon: "git"},
-];
+export const techstack = {
+	React: {
+		label: "React",
+		icon: "react",
+	},
+	"Next.js": {
+		label: "Next.js",
+		icon: "nextjs2",
+	},
+	Laravel: {
+		label: "Laravel",
+		icon: "laravel",
+	},
+	Java: {
+		label: "Java",
+		icon: "java",
+	},
+	MySQL: {
+		label: "MySQL",
+		icon: "mysql",
+	},
+	Supabase: {
+		label: "Supabase",
+		icon: "supabase",
+	},
+	"Tailwind CSS": {
+		label: "Tailwind CSS",
+		icon: "tailwindcss",
+	},
+	Vercel: {
+		label: "Vercel",
+		icon: "vercel",
+	},
+	Git: {
+		label: "Git",
+		icon: "git",
+	},
+	"Bootstrap CSS": {
+		label: "Bootstrap CS",
+		icon: "bootstrap5",
+	},
+};

@@ -8,7 +8,7 @@ import StackIcon from "tech-stack-icons";
 import path from "path";
 
 const Home = ({ projects }) => {
-    console.log(projects)
+	console.log(projects);
 	return (
 		<div className="relative col-span-4 items-center min-h-screen">
 			<main className="text-foreground">
@@ -36,7 +36,7 @@ const Home = ({ projects }) => {
 				<section id="technologies" aria-label="technologies" className="py-20">
 					<h2 className="text-4xl mb-8">Technologies</h2>
 					<div className="grid grid-cols-3 lg:grid-cols-6 gap-2">
-						{techstack.map((techstack) => {
+						{Object.values(techstack).map((techstack) => {
 							return (
 								<div
 									className="px-8 py-3 bg-white/10 rounded-xl flex flex-col items-center justify-center gap-1"

@@ -6,7 +6,6 @@ order: 1
 date: "2024-11-05"
 tech:
     - Next.js
-    - React
     - MySQL
     - AWS RDS
     - Tailwind CSS
