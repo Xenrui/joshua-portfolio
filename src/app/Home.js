@@ -37,9 +37,9 @@ const Home = ({ projects }) => {
 
 				<section id="projects" aria-label="projects" className="py-20">
 					<div className="flex justify-between items-end mb-8 pb-4 border-b border-white/50">
-						<h2 className="text-4xl">Featured Projects</h2>
-						<div className="flex items-center gap-2">
-							<span>View all Project</span>
+						<h2 className="text-2xl md:text-4xl">Featured Projects</h2>
+						<div className="flex items-center gap-1">
+							<span className="text-sm md:text-md">View all Projects</span>
 							<FaChevronRight />
 						</div>
 					</div>
@@ -51,7 +51,7 @@ const Home = ({ projects }) => {
 				</section>
 
 				<section id="technologies" aria-label="technologies" className="py-20">
-					<h2 className="text-4xl mb-8">Technologies</h2>
+					<h2 className="text-2xl md:text-4xl mb-8">Technologies</h2>
 					<div className="grid grid-cols-3 lg:grid-cols-6 gap-2">
 						{Object.values(techstack)
 							.filter((techstack) => techstack.feat === true)

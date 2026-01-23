@@ -51,7 +51,11 @@ const Navbar = () => {
 						const isActive = activeSection === section.id;
 
 						return (
-							<div key={section.id} className="relative flex items-center">
+							<motion.div
+								key={section.id}
+								className="relative flex items-center"
+								initial="rest"
+								whileHover="hover">
 								{/* Dot */}
 								<button
 									onClick={() => scrollToSection(section.id)}
@@ -84,16 +88,15 @@ const Navbar = () => {
 								</button>
 								{/* Label */}
 								<motion.span
-									initial={{ opacity: 0, x: -10 }}
-									animate={{
-										opacity: isActive ? 1 : 0,
-										x: isActive ? 10 : 20,
+									variants={{
+										rest: { opacity: 0, x: 40 },
+										hover: { opacity: 1, x: -20 },
 									}}
 									transition={{ duration: 0.3 }}
-									className="absolute left-8 text-sm font-medium whitespace-nowrap text-white">
+									className="absolute md:right-4  text-sm font-medium whitespace-nowrap text-white text-end">
 									{section.label}
 								</motion.span>
-							</div>
+							</motion.div>
 						);
 					})}
 				</div>

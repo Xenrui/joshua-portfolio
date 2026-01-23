@@ -17,7 +17,7 @@ const ProjectCard = ({ project: { title, description, image, tech, links } }) =>
 				</div>
 				<div className="p-4 flex flex-col justify-between gap-5 flex-1">
 					<div className="">
-						<h3 className="text-2xl mb-2 font-inter font-bold">{title}</h3>
+						<h3 className="text-xl md:text-2xl mb-2 font-inter font-bold">{title}</h3>
 						<p className="text-xs text-white/50">{description}</p>
 					</div>
 					<div className="flex flex-wrap gap-2 text-sm items-center">

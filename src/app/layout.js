@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
 			<body className={`${oswald.variable} ${roboto.variable} ${inter.variable} antialiased`}>
 				<div className="mx-auto max-w-6xl bg-background flex flex-col md:flex-row gap-6 px-6">
 					<div className="flex-1">{children}</div>
-					<div className="w-full md:w-64">
+					<div className="w-full md:w-20 lg:w-64">
 						<Navbar />
 					</div>
 				</div>

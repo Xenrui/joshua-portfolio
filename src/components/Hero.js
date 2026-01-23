@@ -9,8 +9,14 @@ const Hero = () => {
 		<div className="relative">
 			<div className="flex gap-4 items-baseline mb-5">
 				<h1 className="text-5xl sm:text-6xl lg:text-7xl text-foreground font-bold">
-					Joshua Delos Reyes
-					<span className="text-secondary-accent/50 text-2xl md:text-3xl font-semibold ml-4">/xenrui</span>
+					Joshua{" "}
+					<h1 className="block md:inline">
+						{" "}
+						Delos Reyes
+						<span className="text-secondary-accent/50 text-2xl md:text-3xl font-semibold ml-4">
+							/xenrui
+						</span>
+					</h1>
 				</h1>
 			</div>
 
