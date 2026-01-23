@@ -1,52 +1,52 @@
 export const techstack = {
 	React: {
 		label: "React",
-		icon: "react",
+		iconName: "react",
 		feat: true
 	},
 	"Next.js": {
 		label: "Next.js",
-		icon: "nextjs2",
+		iconName: "nextjs2",
 		feat: true
 	},
 	Laravel: {
 		label: "Laravel",
-		icon: "laravel",
+		iconName: "laravel",
 		feat: true
 	},
 	Java: {
 		label: "Java",
-		icon: "java",
+		iconName: "java",
 		feat: true
 	},
 	MySQL: {
 		label: "MySQL",
-		icon: "mysql",
+		iconName: "mysql",
 		feat: true
 	},
 	Supabase: {
 		label: "Supabase",
-		icon: "supabase",
+		iconName: "supabase",
 		feat: false
 	},
 	"Tailwind CSS": {
 		label: "Tailwind CSS",
-		icon: "tailwindcss",
+		iconName: "tailwindcss",
 		feat: true
 	},
 	Vercel: {
 		label: "Vercel",
-		icon: "vercel",
+		iconName: "vercel",
 		feat: true
 	},
 	Git: {
 		label: "Git",
-		icon: "git",
+		iconName: "git",
 		feat: true
 	},
 	"Bootstrap CSS": {
 		label: "Bootstrap CS",
-		icon: "bootstrap5",
+		iconName: "bootstrap5",
 		feat: false
 	},
 };

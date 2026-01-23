@@ -6,6 +6,7 @@ import { techstack } from "@/lib/techstack";
 import { FaChevronRight } from "react-icons/fa";
 import StackIcon from "tech-stack-icons";
 import { useEffect, useState } from "react";
+import TechCard from "@/components/ui/tech-card";
 
 const Home = ({ projects }) => {
 	const [quote, setQuote] = useState();
@@ -14,10 +15,9 @@ const Home = ({ projects }) => {
 		const fetchQuote = async () => {
 			try {
 				const response = await fetch("https://thequoteshub.com/api");
-				if (response.ok) {
-					const data = await response.json();
-					setQuote(data);
-				}
+				const data = await response.json();
+				setQuote(data);
+				setLoading(false);
 			} catch (err) {
 				console.log(err);
 			}
@@ -56,18 +56,7 @@ const Home = ({ projects }) => {
 						{Object.values(techstack)
 							.filter((techstack) => techstack.feat === true)
 							.map((techstack) => {
-								return (
-									<div
-										className="px-8 py-3 bg-white/10 rounded-xl flex flex-col items-center justify-center gap-1"
-										key={techstack.label}>
-										<h5 className="text-sm font-bold text-white/70 text-nowrap font-inter">
-											{techstack.label}
-										</h5>
-										<div className="h-12 w-12">
-											<StackIcon name={techstack.icon} />
-										</div>
-									</div>
-								);
+								return <TechCard key={techstack.label} tech={techstack} />;
 							})}
 					</div>
 				</section>
