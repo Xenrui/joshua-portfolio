@@ -1,12 +1,16 @@
 "use client";
 
-import { IconBrandFacebookFilled } from "@tabler/icons-react";
-import { FaEnvelope, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
+import { easeOut, motion } from "motion/react";
 
 const Hero = () => {
 	return (
-		<div className="relative">
+		<motion.div
+			className="relative"
+			initial={{ opacity: 0, y: 10 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5, easeOut }}>
 			<div className="flex gap-4 items-baseline mb-5">
 				<h1 className="text-5xl sm:text-6xl lg:text-7xl text-foreground font-bold">
 					Joshua{" "}
@@ -60,7 +64,7 @@ const Hero = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 
