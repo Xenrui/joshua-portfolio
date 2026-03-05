@@ -1,30 +1,12 @@
-"use client";
-
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import { techstack } from "@/lib/techstack";
 import { FaChevronRight } from "react-icons/fa";
-import StackIcon from "tech-stack-icons";
-import { useEffect, useState } from "react";
 import TechCard from "@/components/ui/tech-card";
 
-const Home = ({ projects }) => {
-	const [quote, setQuote] = useState();
-
-	useEffect(() => {
-		const fetchQuote = async () => {
-			try {
-				const response = await fetch("https://thequoteshub.com/api");
-				const data = await response.json();
-				setQuote(data);
-				setLoading(false);
-			} catch (err) {
-				console.log(err);
-			}
-		};
-
-		fetchQuote();
-	}, []);
+const Home = async ({ projects }) => {
+	const response = await fetch("https://thequoteshub.com/api");
+	const quote = await response.json();
 
 	return (
 		<div className="relative col-span-4 items-center min-h-screen">

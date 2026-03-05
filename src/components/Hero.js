@@ -11,20 +11,15 @@ const Hero = () => {
 			initial={{ opacity: 0, y: 10 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5, easeOut }}>
-			<div className="flex gap-4 items-baseline mb-5">
-				<h1 className="text-5xl sm:text-6xl lg:text-7xl text-foreground font-bold">
-					Joshua{" "}
-					<h1 className="block md:inline">
-						{" "}
-						Delos Reyes
-						<span className="text-secondary-accent/50 text-2xl md:text-3xl font-semibold ml-4">
-							/xenrui
-						</span>
-					</h1>
+			<div className="md:flex gap-4 items-baseline mb-5 text-4xl md:text-6xl lg:text-7xl text-foreground font-bold">
+				<h1>Joshua </h1>
+				<h1 className="">
+					Delos Reyes
+					<span className="text-secondary-accent/50 text-2xl md:text-3xl font-semibold ml-4">/xenrui</span>
 				</h1>
 			</div>
 
-			<div className="text-3xl sm:text-4xl md:text-5xl mb-8 flex gap-3 font-semibold text-secondary-fg items-center">
+			<div className="text-2xl sm:text-4xl md:text-5xl mb-8 flex gap-3 font-semibold text-secondary-fg items-center">
 				<span>&mdash;</span>
 				<Typewriter
 					options={{
