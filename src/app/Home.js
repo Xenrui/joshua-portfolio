@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 import TechCard from "@/components/ui/tech-card";
 
 const Home = async ({ projects }) => {
-	const response = await fetch("https://thequoteshub.com/api");
+	const response = await fetch("https://thequoteshub.com/api", { cache: "no-store" });
 	const quote = await response.json();
 
 	return (
